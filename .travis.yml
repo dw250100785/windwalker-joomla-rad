@@ -2,10 +2,6 @@ language: php
 
 php:
   - hhvm
-  - 5.3
-  - 5.4
-  - 5.5
-  - 5.6
   - 7.0
 
 matrix:
@@ -25,6 +21,7 @@ before_script:
 
   # Remove current windwalker
   - rm -rf libraries/windwalker
+  - rm -rf libraries/windwalker-bundles
   - rm bin/windwalker
 
   # Install current test version
